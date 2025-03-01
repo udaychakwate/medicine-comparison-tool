@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website Name</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Custom styles for image hover effect */
+    .image-hover:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+  <!-- Navbar -->
+  <nav class="bg-blue-600 p-4 text-white">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold">Your Logo</a>
+      <div class="flex space-x-4">
+        <a href="#" class="hover:text-gray-200">Home</a>
+        <a href="#" class="hover:text-gray-200">Tools</a>
+        <a href="#" class="hover:text-gray-200">Gallery</a>
+        <a href="#" class="hover:text-gray-200">Contact</a>
+        <button id="dark-mode-toggle" class="p-2 bg-blue-500 rounded">Toggle Dark Mode</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="bg-blue-500 text-white py-20">
+    <div class="container mx-auto text-center">
+      <h1 class="text-5xl font-bold">Welcome to Your Website</h1>
+      <p class="mt-4 text-xl">Explore our amazing PDF tools and stunning image gallery.</p>
+      <div class="mt-8">
+        <a href="#tools" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- PDF Tools Section -->
+  <section id="tools" class="py-16">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center">Our PDF Tools</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+        <!-- Tool 1 -->
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+          <img src="https://via.placeholder.com/100" alt="PDF Merge" class="mx-auto">
+          <h3 class="text-xl font-semibold mt-4">PDF Merge</h3>
+          <p class="mt-2">Combine multiple PDFs into one.</p>
+          <a href="#" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Try Now</a>
+        </div>
+        <!-- Tool 2 -->
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+          <img src="https://via.placeholder.com/100" alt="PDF Split" class="mx-auto">
+          <h3 class="text-xl font-semibold mt-4">PDF Split</h3>
+          <p class="mt-2">Split a PDF into multiple files.</p>
+          <a href="#" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Try Now</a>
+        </div>
+        <!-- Tool 3 -->
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+          <img src="https://via.placeholder.com/100" alt="PDF Compress" class="mx-auto">
+          <h3 class="text-xl font-semibold mt-4">PDF Compress</h3>
+          <p class="mt-2">Reduce the size of your PDF files.</p>
+          <a href="#" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Try Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Gallery Section -->
+  <section class="py-16">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center">Image Gallery</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8">
+        <!-- Image 1 -->
+        <div class="overflow-hidden rounded-lg shadow-lg image-hover">
+          <img src="https://via.placeholder.com/400" alt="Gallery Image 1" class="w-full h-48 object-cover">
+        </div>
+        <!-- Image 2 -->
+        <div class="overflow-hidden rounded-lg shadow-lg image-hover">
+          <img src="https://via.placeholder.com/400" alt="Gallery Image 2" class="w-full h-48 object-cover">
+        </div>
+        <!-- Image 3 -->
+        <div class="overflow-hidden rounded-lg shadow-lg image-hover">
+          <img src="https://via.placeholder.com/400" alt="Gallery Image 3" class="w-full h-48 object-cover">
+        </div>
+        <!-- Image 4 -->
+        <div class="overflow-hidden rounded-lg shadow-lg image-hover">
+          <img src="https://via.placeholder.com/400" alt="Gallery Image 4" class="w-full h-48 object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white py-8">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2023 Your Website Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Dark Mode Toggle Script -->
+  <script>
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    darkModeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+</body>
+</html>
